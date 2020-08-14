@@ -15,13 +15,14 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-info sticky-top">
             <div class="container px-0">
-                <a class="navbar-brand d-lg-inline-block d-none bg-info p-2 mb-0 rounded text-light h1" href=" contact.html">Anna Palii</a>
-                <a class="navbar-brand d-inline-block d-lg-none bg-info p-2 mb-0 rounded text-light h1" href="contact.html">AP</a>
+                <a class="navbar-brand d-lg-inline-block d-none bg-info p-2 mb-0 rounded text-light h1" href="index.html">Anna Palii</a>
+                <a class="navbar-brand d-inline-block d-lg-none bg-info p-2 mb-0 rounded text-light h1" href="index.html">AP</a>
 
-                <!-- Toggler button-->
+                <!-- Toggle button is not active in s view, since needs Popper.js -->
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
 
                 <!-- Nav Links, when collapsed it becomes a dropdown menu-->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,38 +41,71 @@
             </div>
         </nav>
     </header>
+
     <div class="content">
         <div class="container my-3 p-3 border border border-info bg-light">
             <div class="d-flex row">
                 <div class="align-items-baseline col-lg-12 text-info">
-                    <h1 class="display-4 text-center text-lg-left">Contact</h1>
+
+                    <!-- This headline centers onto the middle of the page in smaller viewports-->
+
+                    <h1 class="display-4 text-center text-lg-left">Portfolio</h1>
                 </div>
             </div>
 
+
             <hr class="my-3">
 
-            <!-- Forms, currently non-functioning-->
+            <!-- Portfolio images and text go here, images are uniformly sized and center vertically in smaller
+            viewports-->
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                    <img src="./assets/alphabet.jpg" class="rounded mx-auto d-block img-fluid img-thumbnail imgsize" alt="Alphabet">
+                    <div class="carousel-caption text-light h3 outline">Alphabet</div>
 
-            <form>
-                <div class="form-group">
-                    <label for="Name">Name</label>
-                    <input type="text" class="form-control" id="Name" placeholder="Enter name">
                 </div>
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter e-mail">
+
+                <div class="col-lg-4">
+                    <img src=" ./assets/cloonok.jpg" class="rounded mx-auto d-block img-fluid img-thumbnail imgsize" alt="Cloonok">
+                    <div class="carousel-caption text-light h3 outline">Cloonok</div>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="3" placeholder="Enter message"></textarea>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                    <img src="./assets/refresco.jpg" class="rounded mx-auto d-block img-fluid img-thumbnail imgsize" alt="Refresco">
+                    <div class="carousel-caption text-light h3 outline">Refresco</div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+
+
+                <div class="col-lg-4">
+                    <img src="./assets/lush.jpg" class="rounded mx-auto d-block img-fluid img-thumbnail imgsize" alt="Lush">
+                    <div class="carousel-caption text-light h3 outline">Lush</div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                    <div>
+                        <img src="./assets/mocharino.jpg" class="rounded mx-auto d-block img-fluid img-thumbnail imgsize" alt="Mocharino">
+                        <div class="carousel-caption text-light h3 outline">Mocharino</div>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
+
     </div>
     
     <footer>
-        <div class="container-fluid h-25">
+        <div class="container-fluid h-25"></div>
             <div class="row">
                 <div class="col-lg-12 bg-dark border-top border-info border-3 text-center text-bottom text-muted pt-3">
                     Copyright © 2020

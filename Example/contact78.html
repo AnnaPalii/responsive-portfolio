@@ -15,10 +15,10 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-info sticky-top">
             <div class="container px-0">
-                <a class="navbar-brand d-lg-inline-block d-none bg-info p-2 mb-0 rounded text-light h1" href=" portfolio.html">Anna Palii</a>
-                <a class="navbar-brand d-inline-block d-lg-none bg-info p-2 mb-0 rounded text-light h1" href="portfolio.html">AP</a>
+                <a class="navbar-brand d-lg-inline-block d-none bg-info p-2 mb-0 rounded text-light h1" href="index.html">Anna Palii</a>
+                <a class="navbar-brand d-inline-block d-lg-none bg-info p-2 mb-0 rounded text-light h1" href="index.html">AP</a>
 
-                <!-- Toggler button-->
+                <!-- Toggle button is not active in s view, since needs Popper.js -->
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,62 +44,30 @@
         <div class="container my-3 p-3 border border border-info bg-light">
             <div class="d-flex row">
                 <div class="align-items-baseline col-lg-12 text-info">
-
-                    <!-- This headline centers onto the middle of the page in smaller viewports-->
-
-                    <h1 class="display-4 text-center text-lg-left">Portfolio</h1>
+                    <h1 class="display-4 text-center text-lg-left">Contact</h1>
                 </div>
             </div>
-
 
             <hr class="my-3">
 
-            <!-- Portfolio images and text go here, images are uniformly sized and center vertically in smaller
-            viewports-->
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-4">
-                    <img src="./assets/images/hangman.jpg" class="rounded mx-auto d-block img-fluid img-thumbnail imgsize" alt="Hangman">
-                    <div class="carousel-caption text-light h3 outline">Hangman</div>
+            <!-- Forms, currently non-functioning-->
 
+            <form>
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" class="form-control" id="Name" placeholder="Enter name">
                 </div>
-
-                <div class="col-lg-4">
-                    <img src=" ./assets/images/rpggame.jpg" class="rounded mx-auto d-block img-fluid img-thumbnail imgsize" alt="RPG Game">
-                    <div class="carousel-caption text-light h3 outline">RPG Game</div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter e-mail">
                 </div>
-
-            </div>
-
-
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-4">
-                    <img src="./assets/images/trivia.jpg" class="rounded mx-auto d-block img-fluid img-thumbnail imgsize" alt="Trivia">
-                    <div class="carousel-caption text-light h3 outline">Trivia</div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Enter message"></textarea>
                 </div>
-
-
-                <div class="col-lg-4">
-                    <img src="./assets/images/widget.jpg" class="rounded mx-auto d-block img-fluid img-thumbnail imgsize" alt="Rutgers Info Widget">
-                    <div class="carousel-caption text-light h3 outline">Rutgers Info Widget</div>
-
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-4">
-                    <div>
-                        <img src="./assets/images/rps.jpg" class="rounded mx-auto d-block img-fluid img-thumbnail imgsize" alt="Rock Paper Scissors">
-                        <div class="carousel-caption text-light h3 outline">Rock Paper Scissors</div>
-                    </div>
-
-
-                </div>
-            </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
-
     </div>
     
     <footer>
