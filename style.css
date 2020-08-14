@@ -1,19 +1,21 @@
-body {
-    background-color: ivory;
+html, body {
     height: 100%;
-}
-.footer {
-    flex-shrink: 0;
-
-    bottom: 0;
-    width: 100%;
-}
-.container-fluid {
-    position: relative;
-    display: block;
-    margin-bottom: 0;
+    margin: 0;
 }
 .content {
-    flex: 1 0 auto;
-    height: 100%;
+    min-height: 100%;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+.footer {
+    height: 30px;
+    margin-top: -30px;
+}
+img {
+    height: 350px;
+    width: 350px;
+}
+h1 {
+    size: 25px;
+    color: darkslategray;
 }

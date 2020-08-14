@@ -24,8 +24,8 @@
 <!-- Add nav links & dropdown menu -->
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-<!-- Add btn to about page (current page) -->
-            <li class="nav-item active">
+<!-- Add btn to about page -->
+            <li class="nav-item ">
             <a class="nav-link" href="index.html">About</a>
             </li>
 <!-- Add btn to portfolio page -->
@@ -33,42 +33,45 @@
             <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
 <!-- Add btn to contact page -->
-            <li class="nav-item">
+            <li class="nav-item active">
             <a class="nav-link" href="contact.html">Contact</a>
             </li>
             </ul>
         </div>
     </nav>
 
-<!-- Add main content inside container  -->
+    <!-- Add main info  -->
     <div class="content">
-        <div class="container my-3 p-3 border border border-info bg-light">
-        <h1 class="text-left text-lg-centre">About Me</h1>
-        <hr class="my-1">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="text-center">
-                        <figure class="figure">
-                            <img src="./assets/rocket.jpeg" class="img-fluid img-thumbnail figure-img rounded" alt="Profile Picture">
-                            <figcaption class="figure-caption">Anna Palii</figcaption>
-                        </figure>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit asperiores animi aperiam quis? Nulla maiores reiciendis laborum rerum aspernatur vero consectetur aut illum alias assumenda provident ipsum, perferendis laboriosam debitis? </p>
-
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolor tempora laudantium cupiditate eius. Molestiae excepturi doloremque quisquam doloribus enim distinctio eius, corrupti quia et, magni quaerat, quae a ex!
-                    </p>
-                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit similique ratione quos. Delectus vel ad unde laudantium vero voluptate odio accusamus repudiandae, necessitatibus modi. Dicta incidunt possimus nesciunt voluptatem. Tempore?
-                    </p>
+        <div class="container my-3 p-3 border border-info bg-light">
+            <div class="d-flex row">
+                <div class="align-items-baseline col-lg-12 text-info" style="color: darkslategray;">
+                    <h1 class="display-3 text-center text-lg-left" style="color:darkslategray;">Contact</h1>
                 </div>
             </div>
+
+            <hr class="my-3">
+            <!-- Add contact form-->
+
+            <form>
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" class="form-control" id="Name" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Enter message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
         </div>
     </div>
 
     <!-- Add footer  -->
-    <footer class="panel-footer">
+    <footer class="footer">
         <div class="container-fluid h-25">
             <div class="row">
                 <div class="col-lg-12 bg-dark border-top border-info border-3 text-center text-bottom text-muted pt-3">
